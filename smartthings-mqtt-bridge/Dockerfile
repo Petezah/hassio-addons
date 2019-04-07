@@ -15,12 +15,12 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install requirements for add-on
 RUN apk add --no-cache jq \
     && apk add --no-cache \
-        git=2.18.1-r0 \
-        nodejs=8.14.0-r0 \
-        npm=8.14.0-r0 \
-        openssh-client=7.7_p1-r3 \
+        git=2.20.1-r0 \
+        nodejs=10.14.2-r0 \
+        npm=10.14.2-r0 \
+        openssh-client=7.9_p1-r4 \
         paxctl=0.9-r0 \
-        python2=2.7.15-r1 \
+        python2=2.7.15-r3 \
     \
     && paxctl -cm "$(command -v node)" \
     \
