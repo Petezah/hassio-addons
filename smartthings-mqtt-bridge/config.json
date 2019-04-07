@@ -1,0 +1,29 @@
+{
+    "name": "SmartThings MQTT Bridge",
+    "version": "0.6",
+    "slug": "st_mqtt_bridge",
+    "description": "A service to bridge SmartThings and MQTT",
+    "startup": "before",
+    "boot": "auto",
+    "options": {
+        "host": "mqtt",
+        "preface": "smartthings",
+        "state_read_suffix": "state",
+        "state_write_suffix": "set_state",
+        "command_suffix": "cmd",
+        "username": "mqtt",
+        "password": null
+    },
+    "schema": {
+        "host": "str",
+        "preface": "str",
+        "state_read_suffix": "str",
+        "state_write_suffix": "str",
+        "command_suffix": "str",
+        "username": "str",
+        "password": "str"
+    },
+    "ports": {
+        "8000/tcp": 8000
+    }
+  }
