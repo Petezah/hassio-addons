@@ -3,6 +3,7 @@
     "version": "0.6",
     "slug": "st_mqtt_bridge",
     "description": "A service to bridge SmartThings and MQTT",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "before",
     "boot": "auto",
     "options": {
